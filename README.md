@@ -114,16 +114,15 @@ With both nodes up and running, the blockchain can be added to MyCrypto for test
     
  ![Set Up Custom Node](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/blob/main/Screenshots/Setting_up_Custom_Node.png)
 
+   *   Make sure that you scroll down to choose Custom in the "Network" column to reveal more  options like Chain ID.
 
-    *   Make sure that you scroll down to choose Custom in the "Network" column to reveal more  options like Chain ID.
+   *   Type ETH in the Currency box.
 
-    *   Type ETH in the Currency box.
+   *   In the Chain ID box, type the chain id you generated during genesis creation.(`444`)
 
-    *   In the Chain ID box, type the chain id you generated during genesis creation.(`444`)
+   *   In the URL box type: `http://127.0.0.1:8545`. This points to the default RPC port on your local machine.
 
-    *   In the URL box type: http://127.0.0.1:8545.  This points to the default RPC port on your local machine.
-
-    *   Finally, click `Save & Use Custom Node`.
+   *   Finally, click `Save & Use Custom Node`.
 
 2.  Import the keystore file from the `node1/keystore` directory into MyCrypto. This will import the private key.
 
