@@ -37,13 +37,13 @@ DiasproNet1 is a private testnet blockchain for ZBank. It will explore what bloc
 * 4.1   Open a terminal window, navigate to the **DiasproNet1** folder and type the following command:`./puppeth`
          > This should show the following prompt.
          
-![Puppeth run](../screenshots/run_puppeth.png).
+![Puppeth run](screenshots/run_puppeth.png).
           
 4.2   Type in the name for the network, *"DiasproNet1"* and hit enter to move forward in the wizard.
 
 * 4.3   Type `<2>`to pick the `<Configure new genesis option>`, then `1` to `Create new genesisfrom scratch`:
 
-![Configuring Genesis](../screenshots/configuring_genesis.png)
+![Configuring Genesis](screenshots/configuring_genesis.png)
 
 * 4.4   Choose the `Clique (Proof of Authority)` consensus algorithm.
 
@@ -83,13 +83,35 @@ DiasproNet1 is a private testnet blockchain for ZBank. It will explore what bloc
 
 The private Proof of Authority blockchain should now be running  and you should see both nodes producing new blocks!
 
+## Connect to MyCrypto Network
+
+* Open up MyCrypto to get the private key of the ETH address you use to pre-fund your chain. Be sure the `Kovan network` is selected.
+
+Make sure you have the private key of your pre-funded address that you wrote down when you first dwonloaded and set MyCrypto.
+
+ ![Verify Kovan network](screenshots/verify-kovan.gif)
+ 
+* Unlock your wallet using your mnemonic phrase and choose the address you want to inspect.
+
+* Select the ETH address you use to pre-fund your chain, and in the "Select" dropdown list, choose `Wallet Info`.
+
+* Click on the eye icon next to the `Private Key` field, and copy and paste the private key of the wallet. Keep this handy, as you will use it in a bit.
+
+ ![Get private key](Images/get-private-key.gif)
+
+Now you are going to connect MyCrypto with the blockchain you created. Follow the next steps.
+
+* Open up MyCrypto, then click `Change Network` at the bottom left:
+
+ ![change network](screensh/change-network.png)
+
 ## Send a Transaction
 
 With both nodes up and running, the blockchain can be added to MyCrypto for testing.
 
 1.  Use the MyCrypto GUI wallet to connect to the node with the exposed RPC port.With both nodes up and running, the blockchain can be added to MyCrypto for testing. Set up a custom network, and include the chain ID, and use ETH as the currency.
 
-    ![Set Up Custom Node](https://github.com/machkev/blockchain-proof-of-authority-development/tree/main/screenshots/setting_up_custome_node.png)
+    ![Set Up Custom Node](screenshots/setting_up_custome_node.png)
         
     *   Open the MyCrypto app, then click `<Change Network>` at the bottom left:
 
@@ -111,7 +133,7 @@ With both nodes up and running, the blockchain can be added to MyCrypto for test
 
 4.  Copy the transaction hash and paste it into the "TX Status" section of the app, or click "TX Status" in the popup.
 
-    ![Transaction Status](https://github.com/machkev/blockchain-proof-of-authority-development/tree/main/screenshots/tx_status.png)
+    ![Transaction Status](screenshots/tx_status2.png)
 
 5.  You just created a blockchain and sent a transaction!
 
