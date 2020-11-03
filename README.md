@@ -24,18 +24,18 @@ DiasproNet1 is a private testnet blockchain for ZBank. It will explore what bloc
             * ./geth --datadir node2 account new
 
 * **Step 3.** After choosing the password and record the public key of the two nodes.
-            * Sealer address Node1: 0xFEDC4E75751dd9709FFf094e4f90d531a1117b47
-            * Sealer address address Node2: x32B053D602Ad9F8ffadAA69a26aA24490aC1674A
+    > * Sealer address Node1: 0xFEDC4E75751dd9709FFf094e4f90d531a1117b47
+    > * Sealer address address Node2: x32B053D602Ad9F8ffadAA69a26aA24490aC1674A
 
 * **Step 4.** Create a genesis block using **puppeth** by following these steps:
 
  * 4.1   Open a terminal window, navigate to the **DiasproNet1** folder and type the following command:`<./puppeth>`
          * This should show the following prompt:
-          ![Puppeth run](/screenshots/Run_Puppeth.png).
+          ![Puppeth run](/tree/main/screenshots/Run_Puppeth.png).
           
  * 4.2   Type in the name for the network, *"DiasproNet1"* and hit enter to move forward in the wizard.
  * 4.3   Type `<2>`to pick the `<Configure new genesis option>`, then `<1>` to `<Create new genesisfrom scratch>`:
-           ![Configuring Genesis](/screenshots/Configuring_Genesis.png)
+           ![Configuring Genesis](/tree/main/screenshots/Configuring_Genesis.png)
  * 4.4   Choose the `<Clique (Proof of Authority)>` consensus algorithm.
  * 4.5   Paste both account addresses from the first step one at a time into the list of accounts to seal.
  * 4.6   Paste them again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
@@ -67,7 +67,7 @@ With both nodes up and running, the blockchain can be added to MyCrypto for test
 * 1.  Use the MyCrypto GUI wallet to connect to the node with the exposed RPC port.
       With both nodes up and running, the blockchain can be added to MyCrypto for testing.
       Set up a custom network, and include the chain ID, and use ETH as the currency.
-        ![Set Up Custom Node](../screenshots/Setting_up_Custome_Node.png)
+        ![Set Up Custom Node](/tree/main/screenshots/Setting_up_Custome_Node.png)
         
  *   Open the MyCrypto app, then click `<Change Network>` at the bottom left:
  *   Click "Add Custom Node", then add the custom network information that you set in the genesis.
@@ -80,7 +80,7 @@ With both nodes up and running, the blockchain can be added to MyCrypto for test
 * 2.  Import the keystore file from the `<node1/keystore>` directory into MyCrypto. This will import the private key.
 * 3.  Send a transaction from the `<node1>` account to the `<node2>` account.
 * 4.  Copy the transaction hash and paste it into the "TX Status" section of the app, or click "TX Status" in the popup.
-        ![Transaction Status](../screenshots/TX_Status.png)
+        ![Transaction Status](/tree/main/screenshots/TX_Status.png)
 * 5.  You just created a blockchain and sent a transaction!
 
 ## Defintions ##
@@ -90,13 +90,11 @@ With both nodes up and running, the blockchain can be added to MyCrypto for test
  * PORT:   For listening to communication. Since the first node's sync port already took up 30320, we need to change this one to 30321 using `<--port>`.
  * BOOTNODES : The `<--bootnodes>` flag allows you to pass the network info needed to find other nodes in the blockchain. This will allow us to connect both of our nodes.
  * ENODE:  We will need this address to tell the second node where to find the first node.
- * MINERTHREADS:   The `<--minerthreads>` flag tells `<geth>` how many CPU threads, or "workers" to use 
-                during mining. Since our difficulty is low, we can set it to 1.
-    SYNCMODE FULL : Synchronizes a full node starting at genesis, verifying all blocks and executing all   
-                    transactions. 
-    BLOCKTIME = 5 seconds
-    Chain ID = 444
-    NetworkID = Protects a node from connecting to the nodes that are synchronizing with other networks. 
+ * MINERTHREADS:   The `<--minerthreads>` flag tells `<geth>` how many CPU threads, or "workers" to use during mining. Since our difficulty is low, we can set it to 1.
+ * SYNCMODE FULL : Synchronizes a full node starting at genesis, verifying all blocks and executing all transactions.
+ * BLOCKTIME = 5 seconds
+ * Chain ID = 444
+ * NetworkID = Protects a node from connecting to the nodes that are synchronizing with other networks. 
 
 
 
