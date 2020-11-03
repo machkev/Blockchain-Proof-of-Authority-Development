@@ -105,6 +105,10 @@ Now you are going to connect MyCrypto with the blockchain you created. Follow th
 
  ![change network](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/blob/main/Screenshots/change-network.png)
 
+
+* Click "Add Custom Node", then add the custom network information that you set in the genesis.
+
+
 ## Send a Transaction
 
 With both nodes up and running, the blockchain can be added to MyCrypto for testing.
