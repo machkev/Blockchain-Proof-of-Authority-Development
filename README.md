@@ -34,14 +34,13 @@ DiasproNet1 is a private testnet blockchain for ZBank. It will explore what bloc
 
 * **Step 4.** Create a genesis block using **puppeth** by following these steps:
 
-* 4.1   Open a terminal window, navigate to the **DiasproNet1** folder and type the following command:`./puppeth`
-         > This should show the following prompt.
+* 4.1   Open a terminal window, navigate to the **DiasproNet1** folder and type the following command:`./puppeth`. This should show the following prompt.
          
 ![Puppeth run](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/blob/main/Screenshots/Run_Puppeth.png).
           
 4.2   Type in the name for the network, *"DiasproNet1"* and hit enter to move forward in the wizard.
 
-* 4.3   Type `<2>`to pick the `<Configure new genesis option>`, then `1` to `Create new genesisfrom scratch`:
+* 4.3   Type `2`to pick the `Configure new genesis option`, then `1` to `Create new genesis from scratch`:
 
 ![Configuring Genesis](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/blob/main/Screenshots/Configuring_Genesis.png)
 
@@ -73,13 +72,13 @@ DiasproNet1 is a private testnet blockchain for ZBank. It will explore what bloc
 
     *   ./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
 
-    * **NOTE1**: Type your password and hit enter - even if you can't see it visually!
+    _**NOTE1**_: Type your password and hit enter - even if you can't see it visually!
 
-    * **NOTE2**: Run the first node, unlock the account, enable mining, and the RPC flag. Only one node needs RPC enabled.
+    _**NOTE2**_: Run the first node, unlock the account, enable mining, and the RPC flag. Only one node needs RPC enabled.
 
-    * **NOTE3**: Set a different peer port for the second node and use the first node's `enode` address as the `bootnode` flag.
+    _**NOTE3**_: Set a different peer port for the second node and use the first node's `enode` address as the `bootnode` flag.
 
-    * **NOTE4**: If nodes are note mining and get error saying waiting for signers, add `--syncmode full` at the end of both commands.
+    _**NOTE4**_: If nodes are note mining and get error saying waiting for signers, add `--syncmode full` at the end of both commands.
 
 The private Proof of Authority blockchain should now be running  and you should see both nodes producing new blocks!
 
@@ -105,21 +104,16 @@ Now you are going to connect MyCrypto with the blockchain you created. Follow th
 
  ![change network](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/blob/main/Screenshots/change-network.png)
 
-
-* Click "Add Custom Node", then add the custom network information that you set in the genesis.
-
-
 ## Send a Transaction
 
 With both nodes up and running, the blockchain can be added to MyCrypto for testing.
 
 1.  Use the MyCrypto GUI wallet to connect to the node with the exposed RPC port.With both nodes up and running, the blockchain can be added to MyCrypto for testing. Set up a custom network, and include the chain ID, and use ETH as the currency.
-
-    ![Set Up Custom Node](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/blob/main/Screenshots/Setting_up_Custom_Node.png)
         
-    *   Open the MyCrypto app, then click `<Change Network>` at the bottom left:
-
     *   Click "Add Custom Node", then add the custom network information that you set in the genesis.
+    
+ ![Set Up Custom Node](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/blob/main/Screenshots/Setting_up_Custom_Node.png)
+
 
     *   Make sure that you scroll down to choose Custom in the "Network" column to reveal more  options like Chain ID.
 
