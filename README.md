@@ -31,11 +31,11 @@ DiasproNet1 is a private testnet blockchain for ZBank. It will explore what bloc
 
  * 4.1   Open a terminal window, navigate to the **DiasproNet1** folder and type the following command:`<./puppeth>`
          * This should show the following prompt:
-          ![Puppeth run](/tree/main/screenshots/Run_Puppeth.png).
+          ![Puppeth run](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/tree/main/Screenshots/Run_Puppeth.png).
           
  * 4.2   Type in the name for the network, *"DiasproNet1"* and hit enter to move forward in the wizard.
  * 4.3   Type `<2>`to pick the `<Configure new genesis option>`, then `<1>` to `<Create new genesisfrom scratch>`:
-           ![Configuring Genesis](/tree/main/screenshots/Configuring_Genesis.png)
+           ![Configuring Genesis](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/tree/main/Screenshots/Configuring_Genesis.png)
  * 4.4   Choose the `<Clique (Proof of Authority)>` consensus algorithm.
  * 4.5   Paste both account addresses from the first step one at a time into the list of accounts to seal.
  * 4.6   Paste them again in the list of accounts to pre-fund. There are no block rewards in PoA, so you'll need to pre-fund.
@@ -67,7 +67,7 @@ With both nodes up and running, the blockchain can be added to MyCrypto for test
 * 1.  Use the MyCrypto GUI wallet to connect to the node with the exposed RPC port.
       With both nodes up and running, the blockchain can be added to MyCrypto for testing.
       Set up a custom network, and include the chain ID, and use ETH as the currency.
-        ![Set Up Custom Node](/tree/main/screenshots/Setting_up_Custome_Node.png)
+        ![Set Up Custom Node](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/tree/main/Screenshots/Setting_up_Custome_Node.png)
         
  *   Open the MyCrypto app, then click `<Change Network>` at the bottom left:
  *   Click "Add Custom Node", then add the custom network information that you set in the genesis.
@@ -80,7 +80,7 @@ With both nodes up and running, the blockchain can be added to MyCrypto for test
 * 2.  Import the keystore file from the `<node1/keystore>` directory into MyCrypto. This will import the private key.
 * 3.  Send a transaction from the `<node1>` account to the `<node2>` account.
 * 4.  Copy the transaction hash and paste it into the "TX Status" section of the app, or click "TX Status" in the popup.
-        ![Transaction Status](/tree/main/screenshots/TX_Status.png)
+        ![Transaction Status](https://github.com/machkev/Blockchain-Proof-of-Authority-Development/tree/main/Screenshots/TX_Status.png)
 * 5.  You just created a blockchain and sent a transaction!
 
 ## Defintions ##
