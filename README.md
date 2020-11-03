@@ -37,13 +37,13 @@ DiasproNet1 is a private testnet blockchain for ZBank. It will explore what bloc
 * 4.1   Open a terminal window, navigate to the **DiasproNet1** folder and type the following command:`./puppeth`
          > This should show the following prompt.
          
-![Puppeth run](https://github.com/machkev/blockchain-proof-of-authority-development/tree/main/screenshots/run_puppeth.png).
+![Puppeth run](../screenshots/run_puppeth.png).
           
 4.2   Type in the name for the network, *"DiasproNet1"* and hit enter to move forward in the wizard.
 
 * 4.3   Type `<2>`to pick the `<Configure new genesis option>`, then `1` to `Create new genesisfrom scratch`:
 
-![Configuring Genesis](https://github.com/machkev/blockchain-proof-of-authority-development/tree/main/screenshots/configuring_genesis.png)
+![Configuring Genesis](../screenshots/configuring_genesis.png)
 
 * 4.4   Choose the `Clique (Proof of Authority)` consensus algorithm.
 
@@ -117,25 +117,25 @@ With both nodes up and running, the blockchain can be added to MyCrypto for test
 
 ## Defintions ##
  
-    * RPC :   The `--rpc` flag enables us to talk to our second node, which will allow us to use MyCrypto(or Metamask)to transact on our chain.
+   * RPC :   The `--rpc` flag enables us to talk to our second node, which will allow us to use MyCrypto(or Metamask)to transact on our chain.
 
-    * MINE:   The `--mine` flag tells the node to mine new blocks.
+   * MINE:   The `--mine` flag tells the node to mine new blocks.
 
-    * PORT:   For listening to communication. Since the first node's sync port already took up 30320, we need to change this one to 30321 using `--port`.
+   * PORT:   For listening to communication. Since the first node's sync port already took up 30320, we need to change this one to 30321 using `--port`.
 
-    * BOOTNODES : The `--bootnodes` flag allows you to pass the network info needed to find other nodes in the blockchain. This will allow us to connect both of our nodes.
+   * BOOTNODES : The `--bootnodes` flag allows you to pass the network info needed to find other nodes in the blockchain. This will allow us to connect both of our nodes.
 
-    * ENODE:  We will need this address to tell the second node where to find the first node.
+   * ENODE:  We will need this address to tell the second node where to find the first node.
 
-    * MINERTHREADS:   The `--minerthreads` flag tells `geth` how many CPU threads, or "workers" to use during mining. Since our difficulty is low, we can set it to 1.
+   * MINERTHREADS:   The `--minerthreads` flag tells `geth` how many CPU threads, or "workers" to use during mining. Since our difficulty is low, we can set it to 1.
 
-    * SYNCMODE FULL : Synchronizes a full node starting at genesis, verifying all blocks and executing all transactions.
+   * SYNCMODE FULL : Synchronizes a full node starting at genesis, verifying all blocks and executing all transactions.
 
-    * BLOCKTIME = 5 seconds
+   * BLOCKTIME = 5 seconds
 
-    * Chain ID = 444
+   * Chain ID = 444
 
-    * NetworkID = Protects a node from connecting to the nodes that are synchronizing with other networks. 
+   * NetworkID = Protects a node from connecting to the nodes that are synchronizing with other networks. 
 
 
 
